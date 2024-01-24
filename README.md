@@ -39,7 +39,7 @@ Async/Await simplifies working with promises, offering a cleaner syntax in async
 
 
 
-### Difference bwtween promise and async/await.
+### Difference between promise and async/await.
 
 Promise
 + Promise is an object representing intermediate state of operation which is guaranteed to complete its execution at some point in future.
