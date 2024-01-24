@@ -4,7 +4,7 @@
 In JavaScript, Promise are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. Prior to promises events and callback functions were used but they had limited functionalities and created unmanageable code. Multiple callback functions would create callback hell that leads to unmanageable code. 
 
 A promise has mainly 3 states:
-+ **Unresolved:** Promise is still pending i.e. not fulfilled or rejected yet.
++ **Pending:** Promise is still pending i.e. not fulfilled or rejected yet.
 + **Resolved:** Action related to the promise succeeded
 + **Rejected:** Action related to the promise failed
 
@@ -33,10 +33,12 @@ myPromise
     console.log("Error:", error);
   });
 ```
+### What is callabck hell?
+Callback hell refers to a situation where multiple nested callbacks make the code more difficult to read and understand.
 
 ### What is Async/await?
 Async/Await simplifies working with promises, offering a cleaner syntax in asynchronous functions. The ‘await’ keyword, exclusive to async functions, pauses execution until the awaited promise resolves or rejects.
-
+In async/await, The await keyword is used to wait for a promise to be resolved before continuing with the execution of the function. The await keyword can only be used inside an async function.
 
 ``` js
 function asynchronous_operational_method() {
@@ -78,5 +80,16 @@ Async/await
 + Error handling is done using .try() and .catch() methods.
 + Using Async/Await makes it easier to read and understand the flow of the program as compared to promise chains.   
 
-### When should we use async await and promise?
+### When should we use async/await and promise?
+When to use Promises:
++ When working with code that is promise-based.
++ When you need more control over the execution flow using .then() and .catch().
++ When you want to take advantage of some promise-specific features, like Promise.all().
+
+When to use Async/Await:
++ When writing asynchronous code in a more synchronous style for improved readability.
++ When dealing with multiple asynchronous operations in a more sequential and cleaner way.
++ When you want to handle errors using try-catch, which can result in more readable error handling.
+
+
 
