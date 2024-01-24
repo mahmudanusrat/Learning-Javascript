@@ -40,26 +40,31 @@ Async/Await simplifies working with promises, offering a cleaner syntax in async
 In async/await, The await keyword is used to wait for a promise to be resolved before continuing with the execution of the function. The await keyword can only be used inside an async function.
 
 ``` js
-function asynchronous_operational_method() {
-	let first_promise = 
-		new Promise((resolve, reject) => resolve("Hello"));
-	let second_promise = 
-		new Promise((resolve, reject) => {
-		setTimeout(() => {
-			resolve(" GeeksforGeeks..");
-		}, 1000);
+const helperPromise = function () {
+	const promise = new Promise(function (resolve, reject) {
+		const x = "geeksforgeeks";
+		const y = "geeksforgeeks";
+		if (x === y) {
+			resolve("Strings are same");
+		} else {
+			reject("Strings are not same");
+		}
 	});
-	let combined_promise = 
-		Promise.all([first_promise, second_promise]);
-	return combined_promise;
+
+	return promise;
+};
+
+async function demoPromise() {
+	try {
+		let message = await helperPromise();
+		console.log(message);
+	} catch (error) {
+		console.log("Error: " + error);
+	}
 }
 
-async function display() {
-	let data = await asynchronous_operational_method();
-	console.log(data);
-}
+demoPromise();
 
-display();
 ```
 
 
