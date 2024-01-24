@@ -32,7 +32,7 @@ myPromise
   .catch((error) => {
     console.log("Error:", error);
   });
-'''
+```
 
 ### What is async await?
 Async/Await simplifies working with promises, offering a cleaner syntax in asynchronous functions. The ‘await’ keyword, exclusive to async functions, pauses execution until the awaited promise resolves or rejects.
