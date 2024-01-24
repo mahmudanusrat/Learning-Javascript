@@ -4,9 +4,9 @@
 In JavaScript, Promise are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. Prior to promises events and callback functions were used but they had limited functionalities and created unmanageable code. Multiple callback functions would create callback hell that leads to unmanageable code. 
 
 A promise has mainly 3 states:
-unresolved: Promise is still pending i.e. not fulfilled or rejected yet.
-resolved: Action related to the promise succeeded
-rejected: Action related to the promise failed
++ **Unresolved:** Promise is still pending i.e. not fulfilled or rejected yet.
++ **Resolved:** Action related to the promise succeeded
++ **Rejected:** Action related to the promise failed
 
 #### How to create a promise?
 
