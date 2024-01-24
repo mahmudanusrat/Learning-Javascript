@@ -69,7 +69,7 @@ display();
 Promise
 + Promise is an object representing intermediate state of operation which is guaranteed to complete its execution at some point in future.
 + Promise has 3 states – resolved, rejected and pending.
-+ If the function “function1” is to executed after the promise, then promise.then(function1) continues execution of the current function after adding the fxn1 call to the callback chain.	
++ If the function “function1” is to executed after the promise, then promise.then(function1) continues execution of the current function after adding the function1 call to the callback chain.	
 + Error handling is done using .then() and .catch() methods.	
 + Promise chains can become difficult to understand sometimes.
 
