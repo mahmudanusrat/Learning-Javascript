@@ -1,10 +1,10 @@
 # Learning-Javascript
 
 ### What is Synchronous operation?
-When a code instruction takes time but completes the operation and moves on to the next one, it is called an asynchronous operation.
+When a code instruction takes time but completes the operation and moves on to the next one, it is called an synchronous operation.
 
 ### what is Asynchronous operation?
-If a code instruction takes time in an operation, skipping that operation and moving to the next one is referred to as a synchronous operation.
+If a code instruction takes time in an operation, skipping that operation and moving to the next one is referred to as a asynchronous operation.
 
 ### What is managed and unmanaged code?
 Code that executes under the control of the runtime is called managed code.
